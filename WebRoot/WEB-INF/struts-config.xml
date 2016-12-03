@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans />
+  <global-exceptions />
+  <global-forwards >
+    <forward name="test" path="/a.jsp" />
+    <forward name="goGwc" path="/gwc.jsp" />
+    
+
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      path="/findAllBook"
+      type="com.footprint.lx.struts.action.FindAllBookAction"
+      cancellable="true">
+      <forward name="ok" path="/background/bookInfo/AllBook.jsp" />
+    </action>
+    <action
+      path="/findAllType"
+      type="com.footprint.lx.struts.action.FindAllTypeAction"
+      cancellable="true">
+      <forward name="ok" path="/background/bookType/AllBookType.jsp" />
+    </action>
+    <action
+      path="/saveBookInfo"
+      type="com.footprint.lx.struts.action.SaveBookInfoAction"
+      cancellable="true">
+      <forward name="ok" path="/findAllBook.do" />
+      
+    </action>
+    <action
+      path="/saveBookType"
+      type="com.footprint.lx.struts.action.SaveBookTypeAction"
+      cancellable="true">
+      <forward name="ok" path="/findAllType.do" />
+      
+    </action>
+    <action
+      path="/updateBookInfo"
+      type="com.footprint.lx.struts.action.UpdateBookInfoAction"
+      cancellable="true">
+      <forward name="ok" path="/background/bookInfo/updateBookInfo.jsp" />
+    </action>
+    <action
+      path="/deleteBookInfo"
+      type="com.footprint.lx.struts.action.DeleteBookInfoAction"
+      cancellable="true" >
+      <forward name="ok" path="/findAllBook.do" />
+    </action>
+    <action
+      path="/findTopType"
+      type="com.footprint.lx.struts.action.FindTopTypeAction"
+      cancellable="true">
+      <forward name="ok" path="/background/bookInfo/saveBookInfo.jsp" />
+      
+    </action>
+    <action
+      path="/initIndex"
+      type="com.footprint.lx.struts.action.InitIndexAction"
+      cancellable="true">
+      <forward name="ok" path="/index.jsp" />
+    </action>
+    <action
+      path="/showOneBookInfo"
+      type="com.footprint.lx.struts.action.ShowOneBookInfoAction"
+      cancellable="true" >
+      <forward name="ok" path="/bookFull.jsp" />
+    </action>
+    <action
+      path="/showAllDiscuss"
+      type="com.footprint.lx.struts.action.ShowAllDiscussAction"
+      cancellable="true">
+      <forward name="ok" path="/allDiscuss.jsp" />
+    </action>
+    <action
+      path="/writeDiscuss"
+      type="com.footprint.lx.struts.action.WriteDiscussAction"
+      cancellable="true">
+      <forward name="ok" path="/writeDiscuss.jsp" />
+    </action>
+    <action
+      path="/saveUser"
+      type="com.footprint.lx.struts.action.SaveUserAction"
+      cancellable="true">
+      <forward name="ok" path="/message.jsp" />
+    </action>
+    <action
+      path="/login"
+      type="com.footprint.lx.struts.action.LoginAction"
+      cancellable="true">
+      <forward name="ok" path="/message.jsp" />
+    </action>
+    <action
+      path="/saveSeekBook"
+      type="com.footprint.lx.struts.action.SaveSeekBookAction"
+      cancellable="true">
+      <forward name="ok" path="/message.jsp" />
+    </action>
+    <action
+      path="/removeUser"
+      type="com.footprint.lx.struts.action.RemoveUserAction"
+      cancellable="true">
+      <forward name="ok" path="/message.jsp" />
+    </action>
+    <action
+      path="/findSomeBook"
+      type="com.footprint.lx.struts.action.FindSomeBookAction"
+      cancellable="true">
+      <forward name="ok" path="/findOtherList.jsp" />
+    </action>
+    <action
+      path="/findBookByType"
+      type="com.footprint.lx.struts.action.FindBookByTypeAction"
+      cancellable="true">
+      <forward name="ok" path="/findOtherList.jsp" />
+    </action>
+    <action
+      parameter="gwcType"
+      path="/gwc"
+      type="com.footprint.lx.struts.action.GwcAction"
+      cancellable="true" >
+      <forward name="ok" path="/message.jsp" />
+    </action>
+    <action
+      path="/saveDiscuss"
+      type="com.footprint.lx.struts.action.SaveDiscussAction"
+      cancellable="true" >
+      <forward name="ok" path="/message.jsp" />
+      <forward name="error" path="/zhuce.jsp" />
+    </action>
+    <action
+      path="/findSomeOrder"
+      type="com.footprint.lx.struts.action.FindSomeOrderAction"
+      cancellable="true">
+      <forward name="ok" path="/orderFind.jsp" />
+    </action>
+    <action
+      path="/findDetailOrder"
+      type="com.footprint.lx.struts.action.FindDetailOrderAction"
+      cancellable="true">
+      <forward name="ok" path="/orderFullFind.jsp" />
+    </action>
+    <action
+      path="/deleteSeek"
+      type="com.footprint.lx.struts.action.DeleteSeekAction"
+      cancellable="true">
+      <forward name="ok" path="/seekBookJsp/seekBookList.jsp" />
+    </action>
+    <action
+      path="/findSeekInfo"
+      type="com.footprint.lx.struts.action.FindSeekInfoAction"
+      cancellable="true">
+      <forward name="ok" path="/seekBookJsp/seekBookList.jsp" />
+    </action>
+    <action
+      path="/showDiscuss"
+      type="com.footprint.lx.struts.action.ShowDiscussAction"
+      cancellable="true">
+      <forward name="ok" path="/discussList.jsp" />
+    </action>
+    <action
+      path="/updateDiscuss"
+      type="com.footprint.lx.struts.action.UpdateDiscussAction"
+      cancellable="true">
+      <forward name="ok" path="/showDiscuss.do" />
+      
+    </action>
+    <action
+      path="/deleteuser"
+      type="com.footprint.lx.struts.action.DeleteuserAction"
+      cancellable="true">
+      <forward name="ok" path="/findAllUser.do" />
+      
+    </action>
+    <action
+      path="/findUser"
+      type="com.footprint.lx.struts.action.FindUserAction"
+      cancellable="true">
+      <forward name="ok" path="/cusInfoJsp/cusFull.jsp" />
+    </action>
+    <action
+      path="/findAllUser"
+      type="com.footprint.lx.struts.action.FindAllUserAction"
+      cancellable="true">
+      <forward name="ok" path="/cusInfoJsp/cusList.jsp" />
+    </action>
+    <action
+      path="/findAllAdmin"
+      type="com.footprint.lx.struts.action.FindAllAdminAction"
+      cancellable="true">
+      <forward name="ok" path="/background/sysAdmin/findSysAdminList.jsp" />
+    </action>
+    <action
+      path="/adminLogin"
+      type="com.footprint.lx.struts.action.AdminLoginAction"
+      cancellable="true">
+      <forward name="error" path="/background/bgLogin.jsp" />
+      <forward name="ok" path="/background/index.jsp" />
+    </action>
+    <action
+      path="/removeAdmin"
+      type="com.footprint.lx.struts.action.RemoveAdminAction"
+      cancellable="true">
+      <forward name="ok" path="/background/bgLogin.jsp" />
+    </action>
+    <action
+      path="/saveAdmin"
+      type="com.footprint.lx.struts.action.SaveAdminAction"
+      cancellable="true">
+      <forward name="ok" path="/findAllAdmin.do" />
+      
+      
+    </action>
+    <action
+      path="/updateAdmin"
+      type="com.footprint.lx.struts.action.UpdateAdminAction"
+      cancellable="true">
+      <forward name="ok" path="/findAllAdmin.do" />
+      
+    </action>
+    <action
+      path="/deleteAdmin"
+      type="com.footprint.lx.struts.action.DeleteAdminAction"
+      cancellable="true" >
+      <forward name="ok" path="/findAllAdmin.do" />
+    </action>
+    <action
+      path="/findOneAdmin"
+      type="com.footprint.lx.struts.action.FindOneAdminAction"
+      cancellable="true" >
+      <forward name="ok" path="/background/sysAdmin/upSysAdminStates.jsp" />
+    </action>
+    <action
+      path="/showItems"
+      type="com.footprint.lx.struts.action.ShowItemsAction"
+      cancellable="true">
+      <forward name="ok" path="/itemList.jsp" />
+    </action>
+    <action
+      path="/updateOrder"
+      type="com.footprint.lx.struts.action.UpdateOrderAction"
+      cancellable="true" >
+      <forward name="ok" path="/showItems.do" />
+    </action>
+
+    
+
+
+
+    
+    
+
+
+
+  </action-mappings>
+  
+<controller processorClass="com.footprint.lx.struts.processor.myProcessor"  />
+</struts-config>
+

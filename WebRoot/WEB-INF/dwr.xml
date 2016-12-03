@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 1.0//EN" "http://www.getahead.ltd.uk/dwr/dwr10.dtd">
+
+<dwr>
+	<allow>
+
+<create javascript="next" creator="new">
+<param name="class" value="com.footprint.dao.impl.BookTypeDAODbimpl"/>
+</create>
+<convert match="com.footprint.dao.entity.BookType" converter="bean">
+</convert>
+	</allow>
+</dwr>

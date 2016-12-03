@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/findAllBook.do" location="195,30" dimension="150,100" />
+  <StrutsActivity path="/findAllType.do" location="195,255" dimension="150,100" />
+  <StrutsActivity path="/saveBookInfo.do" location="30,30" dimension="150,100" />
+  <StrutsActivity path="/saveBookType.do" location="30,255" dimension="150,100" />
+  <StrutsActivity path="/updateBookInfo.do" location="30,150" dimension="150,100" />
+  <StrutsActivity path="/deleteBookInfo.do" location="540,30" dimension="150,100" />
+  <StrutsActivity path="/findTopType.do" location="525,270" dimension="150,100" />
+  <StrutsActivity path="/initIndex.do" location="705,135" dimension="150,100" />
+  <StrutsActivity path="/showOneBookInfo.do" location="30,360" dimension="150,100" />
+  <StrutsActivity path="/showAllDiscuss.do" location="30,465" dimension="150,100" />
+  <StrutsActivity path="/writeDiscuss.do" location="330,390" dimension="150,100" />
+  <StrutsActivity path="/saveUser.do" location="330,495" dimension="150,100" />
+  <StrutsActivity path="/login.do" location="825,555" dimension="150,100" />
+  <StrutsActivity path="/saveSeekBook.do" location="645,390" dimension="150,100" />
+  <StrutsActivity path="/removeUser.do" location="795,390" dimension="150,100" />
+  <StrutsActivity path="/findSomeBook.do" location="30,570" dimension="150,100" />
+  <StrutsActivity path="/findBookByType.do" location="345,660" dimension="150,100" />
+  <StrutsActivity path="/gwc.do" location="510,585" dimension="150,100" />
+  <StrutsActivity path="/saveDiscuss.do" location="945,300" dimension="150,100" />
+  <StrutsActivity path="/findSomeOrder.do" location="870,90" dimension="150,100" />
+  <StrutsActivity path="/findDetailOrder.do" location="1065,105" dimension="150,100" />
+  <StrutsActivity path="/deleteSeek.do" location="720,-45" dimension="150,100" />
+  <StrutsActivity path="/findSeekInfo.do" location="1170,-30" dimension="150,100" />
+  <StrutsActivity path="/showDiscuss.do" location="30,-90" dimension="150,100" />
+  <StrutsActivity path="/updateDiscuss.do" location="30,-240" dimension="150,100" />
+  <StrutsActivity path="/deleteuser.do" location="390,-135" dimension="150,100" />
+  <StrutsActivity path="/findUser.do" location="210,-240" dimension="150,100" />
+  <StrutsActivity path="/findAllUser.do" location="675,-255" dimension="150,100" />
+  <StrutsActivity path="/findAllAdmin.do" location="30,840" dimension="150,100" />
+  <StrutsActivity path="/adminLogin.do" location="345,780" dimension="150,100" />
+  <StrutsActivity path="/removeAdmin.do" location="750,735" dimension="150,100" />
+  <StrutsActivity path="/saveAdmin.do" location="165,705" dimension="150,100" />
+  <StrutsActivity path="/updateAdmin.do" location="0,705" dimension="150,100" />
+  <StrutsActivity path="/deleteAdmin.do" location="285,915" dimension="150,100" />
+  <StrutsActivity path="/findOneAdmin.do" location="480,900" dimension="150,100" />
+  <StrutsActivity path="/showItems.do" location="0,1035" dimension="150,100" />
+  <StrutsActivity path="test;6" location="705,270" dimension="150,100" />
+  <StrutsActivity path="goGwc;6" location="990,615" dimension="150,100" />
+  <StrutsActivity path="/background/bookInfo/AllBook.jsp" location="375,30" dimension="150,100" />
+  <StrutsActivity path="/background/bookType/AllBookType.jsp" location="360,255" dimension="150,100" />
+  <StrutsActivity path="/background/bookInfo/updateBookInfo.jsp" location="195,180" dimension="287,53" />
+  <StrutsActivity path="/background/bookInfo/saveBookInfo.jsp" location="540,135" dimension="150,100" />
+  <StrutsActivity path="/index.jsp" location="735,60" dimension="88,53" />
+  <StrutsActivity path="/bookFull.jsp" location="210,390" dimension="107,53" />
+  <StrutsActivity path="/allDiscuss.jsp" location="210,480" dimension="113,53" />
+  <StrutsActivity path="/writeDiscuss.jsp" location="525,405" dimension="128,53" />
+  <StrutsActivity path="/message.jsp" location="495,510" dimension="109,53" />
+  <StrutsActivity path="/findOtherList.jsp" location="210,600" dimension="131,53" />
+  <StrutsActivity path="/zhuce.jsp" location="1005,240" dimension="90,53" />
+  <StrutsActivity path="/orderFind.jsp" location="870,240" dimension="114,53" />
+  <StrutsActivity path="/orderFullFind.jsp" location="1080,525" dimension="133,53" />
+  <StrutsActivity path="/seekBookJsp/seekBookList.jsp" location="900,-15" dimension="216,53" />
+  <StrutsActivity path="/discussList.jsp" location="240,-75" dimension="118,53" />
+  <StrutsActivity path="/cusInfoJsp/cusFull.jsp" location="420,-225" dimension="161,53" />
+  <StrutsActivity path="/cusInfoJsp/cusList.jsp" location="855,-135" dimension="161,53" />
+  <StrutsActivity path="/background/sysAdmin/findSysAdminList.jsp" location="0,975" dimension="290,53" />
+  <StrutsActivity path="/background/bgLogin.jsp" location="525,765" dimension="181,53" />
+  <StrutsActivity path="/background/index.jsp" location="585,840" dimension="164,53" />
+  <StrutsActivity path="/background/sysAdmin/upSysAdminStates.jsp" location="675,930" dimension="299,53" />
+  <StrutsActivity path="/itemList.jsp" location="270,1065" dimension="101,53" />
+  <StrutsActivity path="/a.jsp" location="870,300" dimension="64,53" />
+  <StrutsActivity path="/gwc.jsp" location="1170,615" dimension="80,53" />
+  <StrutsActivity path="/updateOrder.do" location="495,1035" dimension="150,100" />
+  <StrutsTransition id="/findTopType.do,ok,/background/bookInfo/saveBookInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="615,270" />
+      <AbsolutePoint location="615,235" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findAllBook.do,ok,/background/bookInfo/AllBook.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="345,80" />
+      <AbsolutePoint location="375,80" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showDiscuss.do,ok,/discussList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,-48" />
+      <AbsolutePoint location="240,-48" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteAdmin.do,ok,/findAllAdmin.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="285,925" />
+      <AbsolutePoint location="180,925" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/adminLogin.do,ok,/background/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="495,865" />
+      <AbsolutePoint location="585,865" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/removeUser.do,ok,/message.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="870,490" />
+      <AbsolutePoint location="870,518" />
+      <AbsolutePoint location="604,518" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/adminLogin.do,error,/background/bgLogin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="495,795" />
+      <AbsolutePoint location="525,795" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findSeekInfo.do,ok,/seekBookJsp/seekBookList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1170,11" />
+      <AbsolutePoint location="1116,11" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteSeek.do,ok,/seekBookJsp/seekBookList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="870,11" />
+      <AbsolutePoint location="900,11" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveAdmin.do,ok,/findAllAdmin.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="240,805" />
+      <AbsolutePoint location="240,908" />
+      <AbsolutePoint location="180,908" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateOrder.do,ok,/showItems.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="495,1050" />
+      <AbsolutePoint location="150,1050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="goGwc;6,null,/gwc.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1140,641" />
+      <AbsolutePoint location="1170,641" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findUser.do,ok,/cusInfoJsp/cusFull.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="360,-198" />
+      <AbsolutePoint location="420,-198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveSeekBook.do,ok,/message.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="645,473" />
+      <AbsolutePoint location="549,473" />
+      <AbsolutePoint location="549,510" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,ok,/message.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="900,555" />
+      <AbsolutePoint location="900,540" />
+      <AbsolutePoint location="604,540" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findAllType.do,ok,/background/bookType/AllBookType.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="345,305" />
+      <AbsolutePoint location="360,305" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveDiscuss.do,ok,/message.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="945,377" />
+      <AbsolutePoint location="503,377" />
+      <AbsolutePoint location="503,510" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="test;6,null,/a.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="855,326" />
+      <AbsolutePoint location="870,326" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findAllAdmin.do,ok,/background/sysAdmin/findSysAdminList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="145,940" />
+      <AbsolutePoint location="145,975" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteuser.do,ok,/findAllUser.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="540,-97" />
+      <AbsolutePoint location="750,-97" />
+      <AbsolutePoint location="750,-155" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gwc.do,ok,/message.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="549,585" />
+      <AbsolutePoint location="549,563" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveUser.do,ok,/message.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="480,536" />
+      <AbsolutePoint location="495,536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findSomeOrder.do,ok,/orderFind.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="927,190" />
+      <AbsolutePoint location="927,240" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveDiscuss.do,error,/zhuce.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1050,300" />
+      <AbsolutePoint location="1050,293" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveBookType.do,ok,/findAllType.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,285" />
+      <AbsolutePoint location="195,285" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findSomeBook.do,ok,/findOtherList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,626" />
+      <AbsolutePoint location="210,626" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findBookByType.do,ok,/findOtherList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="420,660" />
+      <AbsolutePoint location="420,626" />
+      <AbsolutePoint location="341,626" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showItems.do,ok,/itemList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="150,1091" />
+      <AbsolutePoint location="270,1091" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateAdmin.do,ok,/findAllAdmin.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="105,805" />
+      <AbsolutePoint location="105,840" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showOneBookInfo.do,ok,/bookFull.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,416" />
+      <AbsolutePoint location="210,416" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/initIndex.do,ok,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="779,135" />
+      <AbsolutePoint location="779,113" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/writeDiscuss.do,ok,/writeDiscuss.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="480,431" />
+      <AbsolutePoint location="525,431" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/removeAdmin.do,ok,/background/bgLogin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="750,791" />
+      <AbsolutePoint location="706,791" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveBookInfo.do,ok,/findAllBook.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,80" />
+      <AbsolutePoint location="195,80" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findOneAdmin.do,ok,/background/sysAdmin/upSysAdminStates.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="630,956" />
+      <AbsolutePoint location="675,956" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findDetailOrder.do,ok,/orderFullFind.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1146,205" />
+      <AbsolutePoint location="1146,525" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showAllDiscuss.do,ok,/allDiscuss.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,506" />
+      <AbsolutePoint location="210,506" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateBookInfo.do,ok,/background/bookInfo/updateBookInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="180,206" />
+      <AbsolutePoint location="195,206" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/findAllUser.do,ok,/cusInfoJsp/cusList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="780,-155" />
+      <AbsolutePoint location="780,-97" />
+      <AbsolutePoint location="855,-97" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateOrder.do.do,ok,/showItems.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="465,1133" />
+      <AbsolutePoint location="150,1133" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateDiscuss.do,ok,/showDiscuss.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="105,-140" />
+      <AbsolutePoint location="105,-90" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteBookInfo.do,ok,/findAllBook.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="570,30" />
+      <AbsolutePoint location="570,-7" />
+      <AbsolutePoint location="270,-7" />
+      <AbsolutePoint location="270,30" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
